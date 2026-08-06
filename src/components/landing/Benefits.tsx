@@ -66,7 +66,7 @@ const itemVariants = {
 
 export function Benefits() {
   return (
-    <section className="section-padding bg-cream/50">
+    <section id="benefits" className="section-padding bg-cream/50">
       <div className="container-landing">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
