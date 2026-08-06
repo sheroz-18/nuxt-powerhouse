@@ -1,24 +1,63 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { Header } from "../components/landing/Header";
+import { Hero } from "../components/landing/Hero";
+import { Templates } from "../components/landing/Templates";
+import { Categories } from "../components/landing/Categories";
+import { HowItWorks } from "../components/landing/HowItWorks";
+import { Benefits } from "../components/landing/Benefits";
+import { Reviews } from "../components/landing/Reviews";
+import { FAQ } from "../components/landing/FAQ";
+import { Footer } from "../components/landing/Footer";
+
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "InviteStudio — Digital Invitations That Feel Magical" },
+      {
+        name: "description",
+        content:
+          "Create beautiful digital invitations for weddings, birthdays, baby showers, and any celebration. Choose a template, customize every detail, and share via link in minutes.",
+      },
+      {
+        property: "og:title",
+        content: "InviteStudio — Digital Invitations That Feel Magical",
+      },
+      {
+        property: "og:description",
+        content:
+          "Create beautiful digital invitations for weddings, birthdays, baby showers, and any celebration. Share via link in seconds.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:title",
+        content: "InviteStudio — Digital Invitations That Feel Magical",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Create beautiful digital invitations for weddings, birthdays, baby showers, and any celebration. Share via link in seconds.",
+      },
+    ],
+  }),
+  component: LandingPage,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function LandingPage() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <Hero />
+        <Templates />
+        <Categories />
+        <HowItWorks />
+        <Benefits />
+        <Reviews />
+        <FAQ />
+      </main>
+      <Footer />
     </div>
   );
 }
