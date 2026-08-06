@@ -4,10 +4,10 @@ import { Menu, X, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
 const navLinks = [
-  { label: "Templates", href: "#templates" },
-  { label: "Categories", href: "#categories" },
-  { label: "How it works", href: "#how-it-works" },
-  { label: "Reviews", href: "#reviews" },
+  { label: "Шаблоны", href: "#templates" },
+  { label: "Категории", href: "#categories" },
+  { label: "Как это работает", href: "#how-it-works" },
+  { label: "Отзывы", href: "#reviews" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -31,9 +31,7 @@ export function Header() {
       <div className="container-landing">
         <nav
           className={`flex items-center justify-between rounded-full px-5 py-3 transition-all duration-300 ${
-            scrolled
-              ? "glass-strong"
-              : "bg-transparent"
+            scrolled ? "glass-strong" : "bg-transparent"
           }`}
         >
           <Link to="/" className="flex items-center gap-2 group">
@@ -64,13 +62,13 @@ export function Header() {
               to="/"
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
             >
-              Log in
+              Войти
             </Link>
             <a
               href="#create"
               className="btn-primary inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold"
             >
-              Create invitation
+              Создать приглашение
             </a>
           </div>
 
@@ -111,7 +109,7 @@ export function Header() {
                 onClick={() => setMobileOpen(false)}
                 className="btn-primary mt-4 flex w-full items-center justify-center px-5 py-3 text-sm font-semibold"
               >
-                Create invitation
+                Создать приглашение
               </a>
             </div>
           </motion.div>
