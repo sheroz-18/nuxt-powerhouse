@@ -1,7 +1,7 @@
 {
-  "name": "InviteStudio — Digital Invitations",
+  "name": "InviteStudio — Цифровые приглашения",
   "short_name": "InviteStudio",
-  "description": "Create beautiful digital invitations for any celebration and share them via link.",
+  "description": "Создавайте красивые цифровые приглашения для любого праздника и делитесь ими ссылкой.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",

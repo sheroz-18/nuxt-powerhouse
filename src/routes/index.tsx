@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-
 import { Header } from "../components/landing/Header";
 import { Hero } from "../components/landing/Hero";
 import { Templates } from "../components/landing/Templates";
@@ -13,38 +12,29 @@ import { Footer } from "../components/landing/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "InviteStudio — Digital Invitations That Feel Magical" },
+      { title: "InviteStudio — Цифровые приглашения для любого праздника" },
       {
         name: "description",
         content:
-          "Create beautiful digital invitations for weddings, birthdays, baby showers, and any celebration. Choose a template, customize every detail, and share via link in minutes.",
+          "Создавайте потрясающие цифровые приглашения: свадьба, день рождения, baby shower, праздники и религиозные события. Настраивайте, отправляйте и отслеживайте RSVP в одном месте.",
       },
       {
         property: "og:title",
-        content: "InviteStudio — Digital Invitations That Feel Magical",
+        content: "InviteStudio — Цифровые приглашения для любого праздника",
       },
       {
         property: "og:description",
         content:
-          "Create beautiful digital invitations for weddings, birthdays, baby showers, and any celebration. Share via link in seconds.",
+          "Создавайте, персонализируйте и делитесь красивыми приглашениями. Без навыков дизайна, за минуты.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      {
-        name: "twitter:title",
-        content: "InviteStudio — Digital Invitations That Feel Magical",
-      },
-      {
-        name: "twitter:description",
-        content:
-          "Create beautiful digital invitations for weddings, birthdays, baby showers, and any celebration. Share via link in seconds.",
-      },
     ],
   }),
-  component: LandingPage,
+  component: Index,
 });
 
-function LandingPage() {
+function Index() {
   return (
     <div className="min-h-screen bg-background">
       <Header />

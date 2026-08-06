@@ -3,25 +3,25 @@ import { Star, Quote } from "lucide-react";
 
 const reviews = [
   {
-    name: "Elena M.",
-    role: "Wedding bride",
-    avatar: "EM",
-    text: "Our guests kept asking who designed the invitation. It felt like a boutique paper card, but digital and effortless to share.",
-    rating: 5,
+    name: "Анна Смирнова",
+    role: "Невеста",
+    text: "Наши свадебные приглашения выглядели так дорого и нежно. Гости звонили, чтобы спросить, кто делал дизайн!",
+    avatar: "AS",
+    color: "bg-rose-100 text-rose-600",
   },
   {
-    name: "David K.",
-    role: "Birthday host",
-    avatar: "DK",
-    text: "Created a 30th birthday invite in 10 minutes. The RSVP tracking saved me so much back-and-forth on WhatsApp.",
-    rating: 5,
+    name: "Мария Ковалева",
+    role: "Организатор мероприятий",
+    text: "Я использую InviteStudio для каждого праздника. Визуальный редактор экономит часы, а результат — всегда на высоте.",
+    avatar: "МК",
+    color: "bg-violet-100 text-violet-600",
   },
   {
-    name: "Sofia & Omar",
-    role: "Baby shower hosts",
-    avatar: "SO",
-    text: "The gender-reveal theme was adorable. We changed the colors in one click and shared the link with family across the world.",
-    rating: 5,
+    name: "Елена Волкова",
+    role: "Мама в декрете",
+    text: "Приглашение на baby shower получилось невероятно милым. Делала с телефона за 10 минут перед сном.",
+    avatar: "ЕВ",
+    color: "bg-sky-100 text-sky-600",
   },
 ];
 
@@ -55,11 +55,15 @@ export function Reviews() {
         >
           <span className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
             <Star className="h-4 w-4 fill-current" />
-            Loved by hosts
+            Отзывы
           </span>
           <h2 className="font-display text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-            Celebrations start with a smile
+            Истории наших гостей
           </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            Присоединяйтесь к тысячам организаторов, которые сделали свои
+            мероприятия незабываемыми.
+          </p>
         </motion.div>
 
         <motion.div
@@ -73,26 +77,27 @@ export function Reviews() {
             <motion.div
               key={review.name}
               variants={itemVariants}
-              className="glass card-hover relative rounded-[1.75rem] p-7"
+              className="glass relative flex flex-col justify-between rounded-[1.75rem] p-7"
             >
-              <Quote className="absolute top-6 right-6 h-8 w-8 text-primary/10" />
-              <div className="flex items-center gap-1">
-                {Array.from({ length: review.rating }).map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-gold text-gold" />
+              <Quote className="absolute top-5 right-5 h-8 w-8 text-primary/10" />
+              <div className="mb-5 flex gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <Star
+                    key={i}
+                    className="h-4 w-4 fill-primary text-primary"
+                  />
                 ))}
               </div>
-              <p className="mt-4 text-base leading-relaxed text-foreground">
-                "{review.text}"
-              </p>
+              <p className="text-foreground">"{review.text}"</p>
               <div className="mt-6 flex items-center gap-3">
-                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-primary to-rose-light font-display text-sm font-bold text-primary-foreground">
+                <div
+                  className={`flex h-11 w-11 items-center justify-center rounded-full text-sm font-bold ${review.color}`}
+                >
                   {review.avatar}
                 </div>
                 <div>
-                  <p className="font-display text-sm font-bold text-foreground">
-                    {review.name}
-                  </p>
-                  <p className="text-xs text-muted-foreground">{review.role}</p>
+                  <p className="font-semibold text-foreground">{review.name}</p>
+                  <p className="text-sm text-muted-foreground">{review.role}</p>
                 </div>
               </div>
             </motion.div>
