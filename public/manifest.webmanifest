@@ -1,0 +1,18 @@
+{
+  "name": "InviteStudio — Digital Invitations",
+  "short_name": "InviteStudio",
+  "description": "Create beautiful digital invitations for any celebration and share them via link.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FF5FA2",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}
