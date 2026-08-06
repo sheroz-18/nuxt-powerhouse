@@ -306,20 +306,20 @@
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft), 0 4px 14px oklch(0.711 0.203 357.662 / 0.3);
   transition: transform 0.2s var(--ease-spring), box-shadow 0.2s var(--ease-out-expo);
-}
 
-@utility btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-glow), 0 8px 24px oklch(0.711 0.203 357.662 / 0.35);
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow), 0 8px 24px oklch(0.711 0.203 357.662 / 0.35);
+  }
 }
 
 @utility card-hover {
   transition: transform 0.3s var(--ease-spring), box-shadow 0.3s var(--ease-out-expo);
-}
 
-@utility card-hover:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-card), var(--shadow-glow);
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-card), var(--shadow-glow);
+  }
 }
 
 @utility section-padding {
