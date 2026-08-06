@@ -28,7 +28,7 @@ export function Hero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
               </span>
-              Over 10,000 invitations sent this month
+              Более 10 000 приглашений отправлено этим месяцем
             </motion.div>
 
             <motion.h1
@@ -37,8 +37,8 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="font-display text-5xl font-extrabold leading-[1.08] tracking-tight text-foreground md:text-6xl lg:text-7xl"
             >
-              Digital invitations{" "}
-              <span className="text-gradient">that feel magical</span>
+              Цифровые приглашения,{" "}
+              <span className="text-gradient">которые волнуют</span>
             </motion.h1>
 
             <motion.p
@@ -47,9 +47,9 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="mt-6 text-lg leading-relaxed text-muted-foreground md:text-xl"
             >
-              Create stunning, personalized invitations for any celebration. Choose a
-              template, customize every detail, and share a beautiful link with
-              your guests in minutes.
+              Создавайте потрясающие персонализированные приглашения для любого
+              праздника. Выберите шаблон, настройте детали и поделитесь
+              красивой ссылкой с гостями за минуты.
             </motion.p>
 
             <motion.div
@@ -62,14 +62,14 @@ export function Hero() {
                 href="#templates"
                 className="btn-primary inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold"
               >
-                Create invitation
+                Создать приглашение
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </a>
               <button className="inline-flex items-center gap-2 rounded-full bg-white/70 px-6 py-3.5 text-sm font-semibold text-foreground shadow-soft backdrop-blur-md transition-all hover:bg-white">
                 <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">
                   <Play className="h-3.5 w-3.5 fill-current" />
                 </span>
-                Watch how it works
+                Смотреть, как это работает
               </button>
             </motion.div>
 
@@ -89,7 +89,7 @@ export function Hero() {
                   </div>
                 ))}
               </div>
-              <p>Trusted by 50,000+ hosts worldwide</p>
+              <p>Нас выбрали 50 000+ организаторов по всему миру</p>
             </motion.div>
           </div>
 
@@ -104,7 +104,7 @@ export function Hero() {
               <div className="glass relative animate-float rounded-[2rem] p-3 shadow-card">
                 <img
                   src={heroInvitation}
-                  alt="Beautiful digital invitation preview"
+                  alt="Красивое цифровое приглашение"
                   width={560}
                   height={560}
                   className="relative z-10 rounded-[1.5rem]"
@@ -112,7 +112,6 @@ export function Hero() {
                 />
               </div>
 
-              {/* Floating mini cards */}
               <motion.div
                 animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
@@ -127,8 +126,8 @@ export function Hero() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs font-semibold text-foreground">RSVP received</p>
-                    <p className="text-[10px] text-muted-foreground">Just now</p>
+                    <p className="text-xs font-semibold text-foreground">Получен RSVP</p>
+                    <p className="text-[10px] text-muted-foreground">Только что</p>
                   </div>
                 </div>
               </motion.div>
@@ -150,8 +149,8 @@ export function Hero() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs font-semibold text-foreground">Theme matched</p>
-                    <p className="text-[10px] text-muted-foreground">Wedding · Rose gold</p>
+                    <p className="text-xs font-semibold text-foreground">Тема подобрана</p>
+                    <p className="text-[10px] text-muted-foreground">Свадьба · розовое золото</p>
                   </div>
                 </div>
               </motion.div>

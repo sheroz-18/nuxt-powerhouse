@@ -5,23 +5,23 @@ const steps = [
   {
     step: "01",
     icon: MousePointer2,
-    title: "Pick a template",
+    title: "Выберите шаблон",
     description:
-      "Browse hundreds of curated designs for weddings, birthdays, baby showers, and more.",
+      "Просмотрите сотни отборных дизайнов для свадеб, дней рождения, встреч малышей и многого другого.",
   },
   {
     step: "02",
     icon: Palette,
-    title: "Make it yours",
+    title: "Сделайте его своим",
     description:
-      "Customize colors, fonts, photos, event details, and RSVP settings in a simple visual editor.",
+      "Настраивайте цвета, шрифты, фото, детали мероприятия и параметры RSVP в простом визуальном редакторе.",
   },
   {
     step: "03",
     icon: Share2,
-    title: "Share the magic",
+    title: "Поделитесь волшебством",
     description:
-      "Get a beautiful link or QR code. Track RSVPs and send reminders in one place.",
+      "Получите красивую ссылку или QR-код. Отслеживайте ответы гостей и отправляйте напоминания в одном месте.",
   },
 ];
 
@@ -54,13 +54,13 @@ export function HowItWorks() {
           className="mb-14 max-w-2xl text-center md:mx-auto"
         >
           <span className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-            Simple as love
+            Просто, как любовь
           </span>
           <h2 className="font-display text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-            Three steps to a perfect invite
+            Три шага до идеального приглашения
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            No design skills needed. Create and share in minutes, not hours.
+            Навыки дизайнера не нужны. Создавайте и делитесь за минуты, а не часы.
           </p>
         </motion.div>
 

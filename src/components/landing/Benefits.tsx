@@ -11,39 +11,39 @@ import {
 const benefits = [
   {
     icon: Sparkles,
-    title: "Premium designs",
+    title: "Премиум-дизайны",
     description:
-      "Every template is crafted by professional designers to look stunning on any screen.",
+      "Каждый шаблон создан профессиональными дизайнерами, чтобы выглядеть потрясающе на любом экране.",
   },
   {
     icon: Smartphone,
-    title: "Made for mobile",
+    title: "Создано для мобильных",
     description:
-      "Invites look beautiful on phones, tablets, and desktops — no zooming or scrolling issues.",
+      "Приглашения идеально смотрятся на телефонах, планшетах и компьютерах — без масштабирования и лишней прокрутки.",
   },
   {
     icon: Zap,
-    title: "Instant delivery",
+    title: "Мгновенная отправка",
     description:
-      "Share your invitation via link, WhatsApp, email, or QR code the moment it is ready.",
+      "Делитесь приглашением через ссылку, WhatsApp, email или QR-код сразу после готовности.",
   },
   {
     icon: Shield,
-    title: "Guest privacy",
+    title: "Приватность гостей",
     description:
-      "Your event details and guest list are protected. No ads, no spam, no surprises.",
+      "Данные мероприятия и список гостей защищены. Никакой рекламы, спама и неприятных сюрпризов.",
   },
   {
     icon: Palette,
-    title: "Total customization",
+    title: "Полная кастомизация",
     description:
-      "Change colors, fonts, photos, maps, and music to match your exact vision.",
+      "Меняйте цвета, шрифты, фото, карты и музыку, чтобы точно соответствовало вашей задумке.",
   },
   {
     icon: Heart,
-    title: "Emotional impact",
+    title: "Эмоциональный эффект",
     description:
-      "Beautiful animations and thoughtful details make every RSVP feel special.",
+      "Красивые анимации и продуманные детали делают каждый ответ гостя особенным.",
   },
 ];
 
@@ -76,10 +76,10 @@ export function Benefits() {
           className="mb-14 max-w-2xl"
         >
           <span className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
-            Why choose us
+            Почему мы
           </span>
           <h2 className="font-display text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-            Everything you need to celebrate
+            Всё, что нужно для праздника
           </h2>
         </motion.div>
 

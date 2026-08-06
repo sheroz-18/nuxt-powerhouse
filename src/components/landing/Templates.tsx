@@ -6,28 +6,28 @@ import templateBaby from "../../assets/template-baby.png";
 
 const templates = [
   {
-    title: "Elegant Wedding",
-    category: "Wedding",
+    title: "Элегантная свадьба",
+    category: "Свадьба",
     image: templateWedding,
     color: "from-primary/20 to-rose-light/20",
     accent: "text-primary",
-    price: "From $12",
+    price: "От 990 ₽",
   },
   {
-    title: "Pastel Birthday",
-    category: "Birthday",
+    title: "Пастельный день рождения",
+    category: "День рождения",
     image: templateBirthday,
     color: "from-rose-light/20 to-gold/20",
     accent: "text-rose-500",
-    price: "From $8",
+    price: "От 690 ₽",
   },
   {
-    title: "Baby Shower",
-    category: "Baby shower",
+    title: "Baby shower",
+    category: "Встреча малыша",
     image: templateBaby,
     color: "from-lavender/20 to-pearl/20",
     accent: "text-violet-500",
-    price: "From $10",
+    price: "От 890 ₽",
   },
 ];
 
@@ -56,27 +56,27 @@ export function Templates() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
           className="mb-14 flex flex-col items-start justify-between gap-6 md:flex-row md:items-end"
         >
           <div className="max-w-2xl">
             <span className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
               <Heart className="h-4 w-4" />
-              Popular templates
+              Популярные шаблоны
             </span>
             <h2 className="font-display text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-              Designs guests fall in love with
+              Дизайны, в которые влюбляются гости
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Hand-crafted templates for every moment worth celebrating. Pick one
-              and make it yours.
+              Тщательно подобранные шаблоны для каждого момента, который стоит
+              отпраздновать. Выберите и сделайте своим.
             </p>
           </div>
           <a
             href="#categories"
             className="group inline-flex items-center gap-2 rounded-full bg-secondary px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
           >
-            Browse all templates
+            Смотреть все шаблоны
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
         </motion.div>

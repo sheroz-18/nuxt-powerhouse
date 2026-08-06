@@ -10,46 +10,46 @@ import {
 
 const categories = [
   {
-    label: "Wedding",
+    label: "Свадьба",
     icon: Heart,
     colors: "bg-rose-50 text-rose-500 border-rose-100",
     gradient: "from-rose-100/60 to-white/80",
-    description: "Romantic, elegant, forever memories",
+    description: "Романтика, элегантность, вечные воспоминания",
   },
   {
-    label: "Birthday",
+    label: "День рождения",
     icon: PartyPopper,
     colors: "bg-amber-50 text-amber-500 border-amber-100",
     gradient: "from-amber-100/60 to-white/80",
-    description: "Bright pastels and joyful confetti",
+    description: "Яркие пастели и радостное конфетти",
   },
   {
-    label: "Gender party",
+    label: "Гендер-пати",
     icon: Baby,
     colors: "bg-sky-50 text-sky-500 border-sky-100",
     gradient: "from-sky-100/60 to-white/80",
-    description: "Blue, pink, and sweet surprises",
+    description: "Голубой, розовый и милые сюрпризы",
   },
   {
-    label: "New Year",
+    label: "Новый год",
     icon: Snowflake,
     colors: "bg-red-50 text-red-500 border-red-100",
     gradient: "from-red-100/60 to-white/80",
-    description: "Red, gold, and sparkling celebrations",
+    description: "Красный, золотой и сияющее настроение",
   },
   {
-    label: "Ramadan",
+    label: "Рамадан",
     icon: Moon,
     colors: "bg-emerald-50 text-emerald-600 border-emerald-100",
     gradient: "from-emerald-100/60 to-white/80",
-    description: "Emerald green with golden accents",
+    description: "Изумрудный зелёный с золотыми акцентами",
   },
   {
-    label: "Kids party",
+    label: "Детский праздник",
     icon: Smile,
     colors: "bg-violet-50 text-violet-500 border-violet-100",
     gradient: "from-violet-100/60 to-white/80",
-    description: "Fun, playful, and full of wonder",
+    description: "Весёлые, яркие и полные чуда",
   },
 ];
 
@@ -78,19 +78,19 @@ export function Categories() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+          transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] }}
           className="mb-14 max-w-2xl"
         >
           <span className="mb-3 inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-semibold text-primary">
             <PartyPopper className="h-4 w-4" />
-            Every occasion
+            Для любого случая
           </span>
           <h2 className="font-display text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-            Choose your celebration
+            Выберите свой праздник
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Each theme automatically adapts colors, typography, and illustrations
-            to match your special day.
+            Каждая тема автоматически адаптирует цвета, типографику и
+            иллюстрации под ваш особенный день.
           </p>
         </motion.div>
 
